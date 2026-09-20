@@ -1,0 +1,3 @@
+# This project uses only Python's built-in standard library.
+# sqlite3 and datetime both come with Python automatically -
+# no external packages need to be installed to run this program.
