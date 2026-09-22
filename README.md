@@ -88,5 +88,4 @@ run it, and everything you add stays saved for next time.
 ## AI Assistance
 
 Claude (Anthropic) was used as a learning aid to explain OOP and
-SQLite concepts, and to help design, write, and debug the
-application across all files.
+SQLite concepts, and to help design and debug.
