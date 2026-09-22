@@ -17,6 +17,21 @@ def ask_for_text(question):
         else:
             return text
 
+def ask_for_name(question):
+    """
+    Keep asking until the user types a name that is not empty and
+    contains only letters and spaces (no numbers or symbols) - a
+    real person's name shouldn't contain digits.
+    """
+    while True:
+        name = input(question)
+        name = name.strip()
+        if name == "":
+            print("Name cannot be empty.")
+        elif not name.replace(" ", "").isalpha():
+            print("Please enter a valid name (letters only).")
+        else:
+            return name
 
 def ask_for_a_number(question):
     """Keep asking until the user types a whole number bigger than 0."""
