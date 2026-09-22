@@ -24,7 +24,7 @@ def member_menu():
         choice = input("Enter your choice: ").strip()
 
         if choice == "1":
-            name = validation.ask_for_text("Enter member's full name: ")
+            name = validation.ask_for_name("Enter member's full name: ")
             email = validation.ask_for_email("Enter member's email: ")
             member = services.register_member(name, email)
             print("Member registered with ID " + str(member.id) + ".")
