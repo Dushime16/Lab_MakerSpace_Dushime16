@@ -39,7 +39,7 @@ def member_menu():
 
         elif choice == "3":
             member_id = validation.ask_for_a_number("Enter the member ID to update: ")
-            name = validation.ask_for_text("Enter the new name: ")
+            name = validation.ask_for_name("Enter the new name: ")
             email = validation.ask_for_email("Enter the new email: ")
             services.update_member(member_id, name, email)
             print("Member updated.")
